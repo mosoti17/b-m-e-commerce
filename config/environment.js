@@ -17,6 +17,14 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    firebase: {
+      apiKey: "AIzaSyCr22MkwOEg8c2boPkgRO4O7sRB2XRdf_8",
+    authDomain: "bizapp-dfcce.firebaseapp.com",
+    databaseURL: "https://bizapp-dfcce.firebaseio.com",
+    projectId: "bizapp-dfcce",
+    storageBucket: "bizapp-dfcce.appspot.com",
+    messagingSenderId: "76533232626"
+  },
 
     APP: {
       // Here you can pass flags/options to your application instance

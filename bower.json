@@ -1,0 +1,20 @@
+{
+  "name": "b",
+  "description": "Small description for b goes here",
+  "main": "",
+  "authors": [
+    "mosoti17 <mosoti17@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
