@@ -1,0 +1,11 @@
+<div class="container">
+  <p><img src={{model.image}} alt=""></p>
+  <h2>{{model.name}}</h2>
+  <h4>{{model.price}}</h4>
+  <p>{{model.category}}</p>
+  {{review-tile model=model addReview="addReview"}}
+</div>
+<div class="col-md-6">
+  {{edit-product product=model updateProduct="updateProduct"}}
+
+</div>

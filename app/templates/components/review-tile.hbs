@@ -1,0 +1,5 @@
+
+{{#each model.reviews as |review|}}
+{{review.author}}
+{{/each}}
+{{new-review product=model addReview="addReview"}}

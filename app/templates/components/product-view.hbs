@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      {{new-product addProduct="addProduct" }}
+    </div>
+  </div>
+
+  <div class="row">
+
+  {{#each model.products as |product| }}
+    <div class="col-md-3">
+      {{#link-to 'product' product.id}}
+        {{product.name}}
+        <img src={{product.image}}>
+
+      {{/link-to}}
+      <button {{action 'addToCart' product}}>Add to Cart</button>
+    </div>
+  {{/each}}
+
+
+
+
+  </div>
+</div>

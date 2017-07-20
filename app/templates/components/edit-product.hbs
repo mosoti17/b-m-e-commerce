@@ -1,0 +1,35 @@
+{{#if updateProductForm}}
+<div>
+  <form >
+    <div class="form-group">
+      <label for="name">name</label>
+      {{input value=name id="name" class="form-control" placeholder=product.name}}
+    </div>
+    <div class="form-group">
+      <label for="price">price</label>
+      {{input value=price id="price" class="form-control" placeholder=product.price}}
+    </div>
+    <div class="form-group">
+      <label for="category">category</label>
+      {{input value=category id="category" class="form-control" placeholder=product.category}}
+    </div>
+    <div class="form-group">
+      <label for="stockAmount">stockAmount</label>
+      {{input value=stockAmount id="stockAmount" class="form-control" placeholder=product.stockAmount}}
+    </div>
+    <div class="form-group">
+      <label for="discount">discount</label>
+      {{input value=discount id="discount" class="form-control" placeholder=product.discount}}
+    </div>
+    <div class="form-group">
+      <label for="image">image URl</label>
+      {{input value=image id="image" class="form-control" placeholder=product.image}}
+    </div>
+
+  </form>
+<button {{action 'updateProduct' product}}>Update Product</button>
+<button {{action 'cancelUpdate'}}>Cancel</button>
+</div>
+{{else}}
+<button {{action 'showUpdateForm'}}>Update Product</button>
+{{/if}}

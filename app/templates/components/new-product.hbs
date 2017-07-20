@@ -1,0 +1,35 @@
+{{#if newProductForm}}
+<div>
+  <form >
+    <div class="form-group">
+      <label for="name">name</label>
+      {{input value=name id="name" class="form-control"}}
+    </div>
+    <div class="form-group">
+      <label for="price">price</label>
+      {{input value=price id="price" class="form-control"}}
+    </div>
+    <div class="form-group">
+      <label for="category">category</label>
+      {{input value=category id="category" class="form-control"}}
+    </div>
+    <div class="form-group">
+      <label for="stockAmount">stockAmount</label>
+      {{input value=stockAmount id="stockAmount" class="form-control"}}
+    </div>
+    <div class="form-group">
+      <label for="discount">discount</label>
+      {{input value=discount id="discount" class="form-control"}}
+    </div>
+    <div class="form-group">
+      <label for="image">image</label>
+      {{input value=image id="image" class="form-control"}}
+    </div>
+
+  </form>
+<button {{action 'addProduct'}}>New Product</button>
+<button {{action 'cancelProduct'}}>Cancel</button>
+</div>
+{{else}}
+<button {{action 'showProductForm'}}>New Product</button>
+{{/if}}
